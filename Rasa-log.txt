@@ -1,0 +1,100 @@
+2024-11-23 20:36:16 [state 9] user intent: ask_architecture | previous action name: action_listen
+2024-11-23 20:36:16 [state 10] user intent: ask_architecture | previous action name: utter_architecture_response
+2024-11-23 20:36:16 [state 11] user intent: ask_architecture | previous action name: action_listen
+2024-11-23 20:36:16 [state 12] user intent: ask_architecture | previous action name: utter_architecture_response
+2024-11-23 20:36:16 [state 13] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 14] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 15] user intent: ask_architecture | previous action name: action_listen
+2024-11-23 20:36:16 [state 16] user intent: ask_architecture | previous action name: utter_architecture_response
+2024-11-23 20:36:16 [state 17] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 18] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 19] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 20] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 21] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 22] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 23] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 24] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 25] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 26] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 27] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 28] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 29] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 30] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 31] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 32] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 33] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 34] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 35] user intent: ask_architecture | previous action name: action_listen
+2024-11-23 20:36:16 [state 36] user intent: ask_architecture | previous action name: utter_architecture_response
+2024-11-23 20:36:16 [state 37] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 38] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 39] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.rule_policy  - There is a rule for the next action 'utter_goodbye'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.engine.graph  - Node 'run_TEDPolicy2' running 'TEDPolicy.predict_action_probabilities'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'action_session_start' based on user intent.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.engine.graph  - Node 'select_prediction' running 'DefaultPolicyPredictionEnsemble.combine_predictions_from_kwargs'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.ensemble  - Made prediction using user intent.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.ensemble  - Added `DefinePrevUserUtteredFeaturization(False)` event.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.ensemble  - Predicted next action using RulePolicy.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.processor  - Predicted next action 'utter_goodbye' with confidence 1.00.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.processor  - Policy prediction ended with events '[<rasa.shared.core.events.DefinePrevUserUtteredFeaturization object at 0x7f9604faa5f0>]'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.processor  - Action 'utter_goodbye' ended with events '[BotUttered('До свидания! Если появятся вопросы по архитектуре ПО, обращайтесь.', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_goodbye"}, 1732383376.4489393)]'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.engine.runner.dask  - Running graph with inputs: {'__tracker__': <rasa.shared.core.trackers.DialogueStateTracker object at 0x7f9604f43130>}, targets: ['select_prediction'] and ExecutionContext(model_id='901599df573c42bb89ffff7b1fb449a9', should_add_diagnostic_data=False, is_finetuning=False, node_name=None).
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.engine.graph  - Node 'rule_only_data_provider' running 'RuleOnlyDataProvider.provide'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.engine.graph  - Node 'domain_provider' running 'DomainProvider.provide_inference'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.engine.graph  - Node 'run_MemoizationPolicy0' running 'MemoizationPolicy.predict_action_probabilities'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.memoization  - Current tracker state:
+2024-11-23 20:36:16 [state 0] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 1] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.memoization  - There is a memorised next action 'action_listen'
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.engine.graph  - Node 'run_RulePolicy1' running 'RulePolicy.predict_action_probabilities'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.rule_policy  - Current tracker state:
+2024-11-23 20:36:16 [state 1] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 2] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 3] user intent: ask_architecture | previous action name: action_listen
+2024-11-23 20:36:16 [state 4] user intent: ask_architecture | previous action name: utter_architecture_response
+2024-11-23 20:36:16 [state 5] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 6] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 7] user intent: ask_architecture | previous action name: action_listen
+2024-11-23 20:36:16 [state 8] user intent: ask_architecture | previous action name: utter_architecture_response
+2024-11-23 20:36:16 [state 9] user intent: ask_architecture | previous action name: action_listen
+2024-11-23 20:36:16 [state 10] user intent: ask_architecture | previous action name: utter_architecture_response
+2024-11-23 20:36:16 [state 11] user intent: ask_architecture | previous action name: action_listen
+2024-11-23 20:36:16 [state 12] user intent: ask_architecture | previous action name: utter_architecture_response
+2024-11-23 20:36:16 [state 13] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 14] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 15] user intent: ask_architecture | previous action name: action_listen
+2024-11-23 20:36:16 [state 16] user intent: ask_architecture | previous action name: utter_architecture_response
+2024-11-23 20:36:16 [state 17] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 18] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 19] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 20] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 21] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 22] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 23] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 24] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 25] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 26] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 27] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 28] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 29] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 30] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 31] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 32] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 33] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 34] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 35] user intent: ask_architecture | previous action name: action_listen
+2024-11-23 20:36:16 [state 36] user intent: ask_architecture | previous action name: utter_architecture_response
+2024-11-23 20:36:16 [state 37] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 38] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 [state 39] user intent: goodbye | previous action name: action_listen
+2024-11-23 20:36:16 [state 40] user intent: goodbye | previous action name: utter_goodbye
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.rule_policy  - There is a rule for the next action 'action_listen'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.engine.graph  - Node 'run_TEDPolicy2' running 'TEDPolicy.predict_action_probabilities'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'action_back' based on user intent.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.engine.graph  - Node 'select_prediction' running 'DefaultPolicyPredictionEnsemble.combine_predictions_from_kwargs'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.policies.ensemble  - Predicted next action using RulePolicy.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.processor  - Policy prediction ended with events '[]'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2024-11-23 20:36:16 2024-11-23 17:36:16 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'shreyas'.
